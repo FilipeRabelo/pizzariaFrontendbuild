@@ -1,0 +1,141 @@
+.container {
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+
+  h1 {
+    font-size: 1.9rem;
+    margin: 16px 0;
+    color: var(--white);
+    text-align: center;
+  }
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  gap: 16px;
+
+  select {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--dark-900);
+    color: var(--white);
+    padding: 0 8px;
+    border: 1px solid var(--gray-100);
+    transition: filter 0.5s;
+    font-weight: bold;
+
+    &:hover {
+      filter: brightness(1.40);
+    }
+
+  }
+
+  option {
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+    padding: 8px;
+    font-weight: bold;
+  }
+}
+
+.labelImage {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  background-color: var(--dark-900);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-direction: column;
+  margin-bottom: 16px;
+  border: 1px solid var(--gray-100);
+
+
+  input {
+    display: none;
+    transition: all 0.5s;
+
+    &:hover {
+      filter: brightness(1.40);
+    }
+  }
+
+  span {
+    font-weight: bold;
+    z-index: 99;
+    opacity: 0.8;
+    transition: all 0.6s;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+  }
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.input {
+  font-weight: bold;
+  border: 0;
+  height: 40px;
+  background-color: var(--dark-900);
+  border: 1px solid var(--gray-100);
+  border-radius: 8px;
+  padding: 0 8px;
+  color: var(--white);
+  transition: all 0.5s;
+
+  &:hover {
+    filter: brightness(1.40);
+  }
+}
+
+.btnListProduct {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 690px;
+  margin: 16px auto;
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  background-color: crimson;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  transition: all 0.5s;
+  color: #000000;
+  border: #39FF14;
+
+  &:hover {
+    // transform: scale(1) translateY(-1px);
+    box-shadow: 0 0 15px crimson;
+    background-color: transparent;
+    color: #39FF14;
+    border: #39FF14;
+  }
+}
